@@ -1,0 +1,147 @@
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: 600;
+	font-size: 1.1vw;
+	background-color: var(--light2);
+}
+:root {
+	--dark1: #3c4344; /* outline color */
+	--dark2: white; /* image background color */
+	--main1: #ffb272; /* mic box/filter color */
+	--main2: #a4e0d8; /* mic list background color */
+	--main3: #c98c5b; /* button color */
+	--light1: #d2faf5; /* header color */
+	--light2: #68c0b4; /* page background color */
+	--light3: #c5ffc8; /* filter on color */
+}
+button {
+	display: none;
+	width: 150%;
+	height: 100%;
+	border: var(--dark1) solid 0.5vmin;
+	background-color: var(--main3);
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: 600;
+}
+#header {
+	width: 90%;
+	height: 5%;
+	border: var(--dark1) solid 0.5vmin;
+	background: var(--light1);
+	border-top-left-radius: 0.5rem;
+	border-top-right-radius: 0.5rem;
+	position: absolute;
+	top: 5%;
+	left: 5%;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: right;
+	gap: 0%;
+}
+.filter {
+	width: 10%;
+	height: 100%;
+	background-color: var(--light1);
+	margin-right: 1%;
+	border: var(--dark1) solid 0.5vmin;
+	text-align: center;
+}
+.filter > div {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: var(--main1);
+}
+button:hover {
+	animation: shade 0.125s linear 0s 1 normal forwards;
+}
+.filter:hover > button {
+	display: block;
+	box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+	margin-left: -0.5vmin;
+	position: relative;
+	height: auto;
+}
+.filter:hover > button:nth-child(n + 3) {
+	border-top: none;
+}
+#miclist {
+	width: 90%;
+	height: 90%;
+	position: absolute;
+	left: 5%;
+	top: calc(10% + 0.25vmin);
+	border: var(--dark1) solid 0.5vmin;
+	background: var(--main2);
+	border-bottom-left-radius: 0.5rem;
+	border-bottom-right-radius: 0.5rem;
+	z-index: -1;
+	display: flex;
+	flex-direction: column;
+	gap: 10vmin;
+	block-size: auto;
+	overflow: hidden;
+}
+.mic {
+	width: 90%;
+	height: 50%;
+	margin: 0% 5%;
+	background: var(--main1);
+	border: var(--dark1) solid 0.5vmin;
+	border-radius: 0.5rem;
+	display: grid;
+	grid-template-columns: 1.5fr 1fr 1fr 1.5fr;
+}
+.image {
+	max-width: 100%;
+}
+.graphcontainer {
+	border-left: var(--dark1) solid 0.5vmin;
+	background-color: var(--dark2);
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.imagecontainer {
+	border-right: var(--dark1) solid 0.5vmin;
+	background-color: var(--dark2);
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.freqgraph {
+	max-width: 100%;
+}
+.title {
+	font-size: 2.5vw;
+}
+.textcontainer {
+	position: relative;
+	left: 2.5%;
+}
+.description {
+	display: flex;
+	text-align: center;
+	align-items: center;
+	justify-content: center;
+}
+.thinger {
+	text-align: center;
+	margin-top: 2.5%;
+}
+.thinger:last-child {
+	margin-top: 0%;
+	margin-bottom: 2.5%;
+}
+@keyframes shade {
+	from {
+	}
+	to {
+		filter: brightness(0.75);
+	}
+}
