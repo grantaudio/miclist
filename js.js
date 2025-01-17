@@ -547,7 +547,6 @@ document.addEventListener("DOMContentLoaded", () => {
 			freqgraph: "img/linearf.png",
 			freqrange: "20-20000Hz",
 		},
-
 		/* copy and paste the following in the new line to add a new mic:
         {
 			name: "",
@@ -818,7 +817,7 @@ document.addEventListener("DOMContentLoaded", () => {
 			}
 		});
 	}
-	//run everything once compiled, finishing all of this
+	//run everything once everything is checked, finishing all of this
 	micdisplays();
 	filters();
 });

@@ -1,5 +1,1 @@
-GHS Microphone List
-This is basically a website to filter and browse through all the mics at the school. Filters work by checking each mic against each type of filter (owner, type, polar pattern, usage) and seeing if it meets every single one. Filters are not checked if either all of the buttons are off or all of them are on. If you click on more than one button then all mics that meet any of the buttons are shown. This means that mics are filtered by all categories, as long as 1 of each criteria in those categories are met.
-For the person who will maintain this (wink wink) this took me like five days of random class time and 1-2 hours at home. Comments are left to explain (if you are curious) in the js.js file, as well as the information on how to add/modify all the mic entries.
-I would prefer if this was not hosted here, if it is then I will have to remove the personal stuff on it because this is my personal account where I don't feel comfortable sharing my stuff online (just let me know).
-other than that i don't know how to end this readme so uhhhhhh
+microphone list with filters
